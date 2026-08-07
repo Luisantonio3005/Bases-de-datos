@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# 1. Renombrar la rama actual a master localmente
+git branch -m master
+
+# 2. Subir master y establecer el upstream
+git push -u origin master
+
+# 3. Eliminar la rama main remota
+git push origin --delete main
+
+echo "¡Migración de main a master completada con éxito!"
+
